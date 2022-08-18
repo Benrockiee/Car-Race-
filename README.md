@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# Car Race Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+This project demonstrates a car race competition, using the chainlink oracles to determine and automate our verifiably random winner. It comes with a complex contract, tests (staging and unit tests) for this contract, the mock deployment (development chains) and the rinkeby deployment (testnet) for this contract.
