@@ -112,14 +112,12 @@ contract Race is VRFConsumerBaseV2, KeeperCompatibleInterface {
     bool hasBalance = address(this).balance > 0;
     bool EnoughEngineOilAndReinforcedTyres = CarState.FAULTY_ENGINE ==
       s_carState;
-    // bool reinforcedTyres = CarState.BLOWN_TYRE == s_carState;
 
     upkeepNeeded = (isOpen &&
       timePassed &&
       hasRacers &&
       hasBalance &&
       EnoughEngineOilAndReinforcedTyres);
-    //  reinforcedTyres);
   }
 
   function performUpkeep(
